@@ -1,0 +1,141 @@
+.btn {
+  color: red;
+}
+.check_list_item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  padding: 5px 10px 5px 0;
+
+  .ant-checkbox + span {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
+
+.modal_container {
+  width: calc(100vw - 500px) !important;
+  top: 20px !important;
+  div[class^="ant-modal-content"] {
+    border-radius: 30px !important;
+  }
+  div[class^="ant-modal-header"] {
+    border-radius: 30px 30px 0px 0px !important;
+    border-bottom: unset !important;
+  }
+  div[class^="ant-modal-body"] {
+    border-bottom: unset !important;
+    padding: 0px 24px 12px 24px;
+    .modal_body_box {
+      .modal_body_box_item {
+        border: 1px solid #e0e0e0;
+        height: calc(100vh - 170px);
+        overflow: hidden;
+        .modal_header {
+          padding: 12px 16px;
+          background-color: #f8f8f8;
+          display: flex;
+          align-items: center;
+          div[class^="ant-space"] {
+            flex: 1;
+            div[class^="ant-space-item"] {
+              margin-right: 20px;
+            }
+          }
+
+          .total_brand {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+            letter-spacing: 0.0025em;
+            color: #3e3e40;
+          }
+        }
+
+        .modal_body {
+          position: relative;
+          height: 100%;
+          padding: 10px 20px;
+          display: flex;
+          .modal_checkbox_container::-webkit-scrollbar {
+            display: none;
+          }
+          .modal_checkbox_container {
+            position: relative;
+            height: 100%;
+            overflow: scroll;
+            -ms-overflow-style: none;
+            scrollbar-width: none !important;
+            padding-bottom: 50px;
+            flex: 1;
+            .item_checkbox {
+              display: flex;
+              padding: 15px 0px;
+              width: 100% !important;
+              .item_title {
+                margin-top: -11px;
+                margin-right: 35px;
+                font-weight: 600;
+                font-size: 32px;
+                line-height: 150%;
+                letter-spacing: 0.0025em;
+                color: #333333;
+              }
+              .item_checkbox_detail {
+                width: 100% !important;
+                div[class^="ant-row"] {
+                  width: 100% !important;
+                }
+                div[class^="ant-col"] {
+                  width: calc(100% / 3);
+                }
+                label[class^="ant-checkbox-wrapper"] {
+                  margin-bottom: 18px;
+                }
+              }
+            }
+          }
+
+          .list_key {
+            position: absolute;
+            right: 10px;
+            li {
+              list-style: none;
+              font-weight: 400;
+              font-size: 14px;
+              text-align: center;
+              color: #000000;
+              margin-bottom: 2px;
+              cursor: pointer;
+            }
+            .active_key {
+              color: #f173ac;
+              border-bottom: 2px solid #f173ac;
+            }
+          }
+        }
+      }
+    }
+    .modal_footer {
+      padding: 14px 0px;
+      display: flex;
+      justify-content: space-between;
+      .title_addbrand {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: 0.0025em;
+        color: #009ada;
+        cursor: pointer;
+      }
+    }
+  }
+}
+div[class^="ReactVirtualized__Grid"] {
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  padding: 15px;
+}
+div[class^="ReactVirtualized__Grid__innerScrollContainer"] {
+}
